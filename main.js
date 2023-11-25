@@ -13,3 +13,10 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// Auto update the copyright year
+document.addEventListener('DOMContentLoaded', function() {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            document.getElementById('copyright-year').textContent = currentYear;
+        });
